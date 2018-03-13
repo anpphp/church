@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/parumalat_wl"
+        android:id="@+id/header_profile"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="St Gregorios Church"
+        android:id="@+id/header_profile_text"
+        app:layout_constraintLeft_toRightOf="@id/header_profile"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Greater Washington"
+        android:id="@+id/header_profile_location"
+        app:layout_constraintLeft_toRightOf="@id/header_profile"
+        app:layout_constraintTop_toBottomOf="@id/header_profile_text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2337 Fairland Road"
+        android:id="@+id/profile_address1"
+        app:layout_constraintLeft_toRightOf="@id/header_profile"
+        app:layout_constraintTop_toBottomOf="@id/header_profile_location" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silver Spring, MD 20904"
+        android:id="@+id/profile_address2"
+        app:layout_constraintLeft_toRightOf="@id/header_profile"
+        app:layout_constraintTop_toBottomOf="@id/profile_address1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="301-384-3833"
+        android:id="@+id/profile_phone"
+        app:layout_constraintLeft_toRightOf="@id/header_profile"
+        app:layout_constraintTop_toBottomOf="@id/profile_address2"/>
+
+</android.support.constraint.ConstraintLayout>
